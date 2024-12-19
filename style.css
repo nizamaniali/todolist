@@ -70,7 +70,7 @@ p {
 }
 
 .header input {
-  padding: 15px;
+  padding: 13px;
   margin-left: 5px;
   padding-left: 10px;
   border-radius: 10px;
@@ -79,6 +79,7 @@ p {
   font-family: poppins;
   margin-bottom: 10px;
   border: none;
+  font-size: 18px;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   /* border: 2px solid black; */
