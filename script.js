@@ -20,17 +20,13 @@ function append() {
   const text = document.createTextNode(myVal);
 
   if (val.value != '') {
-    //  appended text in P (new item)
     newItem.appendChild(text);
 
     mainBox.appendChild(newItem);
 
     const myBtn = removeBtn();
     mainBox.appendChild(myBtn);
-    // appended button in the P
-    // newItem.appendChild(myBtn);
 
-    // appendBox.appendChild(newItem);
     appendBox.appendChild(mainBox);
 
     myBtn.addEventListener('click', function (child) {
@@ -39,7 +35,6 @@ function append() {
   }
 
   val.value = '';
-  console.log(appendBox.childNodes);
 }
 
 var input = document.getElementById('myInput');
@@ -50,9 +45,11 @@ val.addEventListener('keypress', function (event) {
   }
 });
 
-// function removeChild() {
-//   appendBox.removeChild();
-// }
+function clearAll() {
+  while (appendBox.firstChild) {
+    appendBox.removeChild(appendBox.firstChild);
+  }
+}
 
 // get parent ,
 //  remove child from parent HOW?
