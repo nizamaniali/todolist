@@ -41,14 +41,16 @@ p {
   background-color: #c55ffc;
   /* color: #e2e2e2; */
   color: white;
+  /* color: black; */
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.btnStyle:hover {
-  transition: 0.5s;
-  background-color: 1px solid white;
+.div-style > div:hover {
+  transition: 0.2s;
+  background-color: #a736e4;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .header {
@@ -56,6 +58,7 @@ p {
   font-family: poppins;
 
   margin-bottom: 10px;
+  /* display: flex; */
 }
 
 .header input {
@@ -95,4 +98,40 @@ p {
 .header h3 {
   font-weight: 300px;
   font-size: 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.buttons > div {
+  /* border: 1px solid none; */
+  border: none;
+  border-radius: 20px;
+  height: 45px;
+  font-family: poppins;
+  font-size: 16px;
+  /* padding: 5px 18px; */
+
+  background-color: rgb(9, 219, 9);
+  /* background-color: #c55ffc; */
+
+  color: white;
+  width: 100px;
+
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: ; */
+}
+
+.buttons > div:hover {
+  background-color: rgb(17, 165, 17);
+  transition: 0.2s;
+  transform: scale(1.05);
 }
